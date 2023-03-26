@@ -20,3 +20,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('/v1/crawl', [CrawlController::class, 'crawl']);
+Route::get('/v1/merge', [CrawlController::class, 'merge']);
